@@ -29,6 +29,7 @@ public class LoopViewPagerActivity extends SherlockFragmentActivity implements T
 
 //        mPager = (ViewPager) findViewById(R.id.pager);
          mPager = (LoopViewPager) findViewById(R.id.pager);
+         // アイテムの数を考慮して設定しないと例外が発生する
 //         mPager.setOffscreenPageLimit(3);
 //        final MyFragmentStatePagerAdapter adapter = new MyFragmentStatePagerAdapter(getFragmentManager(), pgaeNum);
         final MyFragmentStatePagerAdapter adapter = new MyFragmentStatePagerAdapter(getSupportFragmentManager(), pgaeNum);

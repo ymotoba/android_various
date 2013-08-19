@@ -1,20 +1,19 @@
 package com.example.android_test;
 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.util.Log;
 import android.view.GestureDetector;
 import android.view.GestureDetector.OnGestureListener;
 import android.view.MotionEvent;
 import android.view.View;
-import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
 import android.widget.FrameLayout.LayoutParams;
 import android.widget.ImageSwitcher;
 import android.widget.ImageView;
 import android.widget.ViewSwitcher.ViewFactory;
 
-public class ImageSwitcherSample2Activity extends Activity implements ViewFactory {
+public class ImageSwitcherSample2Activity extends FragmentActivity implements ViewFactory {
 
     private final static String TAG = "PhotoView";
 

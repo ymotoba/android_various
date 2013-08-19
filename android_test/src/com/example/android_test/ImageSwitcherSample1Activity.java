@@ -1,8 +1,7 @@
 package com.example.android_test;
 
- 
-import android.app.Activity;
 import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Gallery.LayoutParams;
@@ -10,7 +9,7 @@ import android.widget.ImageSwitcher;
 import android.widget.ImageView;
 import android.widget.ViewSwitcher.ViewFactory;
 
-public class ImageSwitcherSample1Activity extends Activity implements ViewFactory {
+public class ImageSwitcherSample1Activity extends FragmentActivity implements ViewFactory {
 
     private final static String TAG = "PhotoView";
 
@@ -68,7 +67,7 @@ public class ImageSwitcherSample1Activity extends Activity implements ViewFactor
     public View makeView() {
         // ApiDemos->Views->ImageSwitcherのソースからメソッドを丸々コピー
         ImageView i = new ImageView(this);
-//        i.setBackgroundColor(0xFF000000);
+        //        i.setBackgroundColor(0xFF000000);
         i.setScaleType(ImageView.ScaleType.FIT_CENTER);
         i.setLayoutParams(new ImageSwitcher.LayoutParams(LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT));
         return i;
